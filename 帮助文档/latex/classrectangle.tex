@@ -1,0 +1,139 @@
+\hypertarget{classrectangle}{}\doxysection{rectangle Class Reference}
+\label{classrectangle}\index{rectangle@{rectangle}}
+
+
+矩形类，继承于shape，用于创建矩形对象  
+
+
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+Inheritance diagram for rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrectangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrectangle_acdc53c26d992570f77862a76aa6c07e7}{rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classrectangle_acdc53c26d992570f77862a76aa6c07e7}{rectangle\+::rectangle}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrectangle_a42fd30e2b9f7423691b38d05aec6b6e4}{set\+\_\+param}} (double input\+\_\+length, double input\+\_\+height)
+\begin{DoxyCompactList}\small\item\em 设置长方形参数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrectangle_a63db15927f4b74386fe26eead7ed0385}{use\+\_\+inch}} ()
+\begin{DoxyCompactList}\small\item\em 用于长方形对象的use\+\_\+inch()函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrectangle_a7512fadd53ddaed3576414a3274830a8}{use\+\_\+centi}} ()
+\begin{DoxyCompactList}\small\item\em 用于长方形对象的use\+\_\+centi()函数 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classrectangle_a297113d4d075b01202b0f7aa450bc021}{get\+\_\+length}} ()
+\begin{DoxyCompactList}\small\item\em 返回以厘米为单位的长方形的长，保留三位小数 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classrectangle_a15df5f319a26b4257aa5fcde4484e8c8}{get\+\_\+height}} ()
+\begin{DoxyCompactList}\small\item\em 返回以厘米为单位的长方形的宽，保留三位小数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+矩形类，继承于shape，用于创建矩形对象 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & 长方形的长，数值认为以厘米为单位 \\
+\hline
+{\em height} & 长方形的宽，应该叫width的，将错就错吧 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrectangle_acdc53c26d992570f77862a76aa6c07e7}\label{classrectangle_acdc53c26d992570f77862a76aa6c07e7}} 
+\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{rectangle()}{rectangle()}}
+{\footnotesize\ttfamily rectangle\+::rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classrectangle_acdc53c26d992570f77862a76aa6c07e7}{rectangle\+::rectangle}} object. 
+
+继承于shape类的构造函数，只是将type的值更改了 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrectangle_a15df5f319a26b4257aa5fcde4484e8c8}\label{classrectangle_a15df5f319a26b4257aa5fcde4484e8c8}} 
+\index{rectangle@{rectangle}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily double rectangle\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回以厘米为单位的长方形的宽，保留三位小数 
+
+\begin{DoxyReturn}{Returns}
+double 长方形的宽 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrectangle_a297113d4d075b01202b0f7aa450bc021}\label{classrectangle_a297113d4d075b01202b0f7aa450bc021}} 
+\index{rectangle@{rectangle}!get\_length@{get\_length}}
+\index{get\_length@{get\_length}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_length()}{get\_length()}}
+{\footnotesize\ttfamily double rectangle\+::get\+\_\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回以厘米为单位的长方形的长，保留三位小数 
+
+\begin{DoxyReturn}{Returns}
+double 长方形的长 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrectangle_a42fd30e2b9f7423691b38d05aec6b6e4}\label{classrectangle_a42fd30e2b9f7423691b38d05aec6b6e4}} 
+\index{rectangle@{rectangle}!set\_param@{set\_param}}
+\index{set\_param@{set\_param}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{set\_param()}{set\_param()}}
+{\footnotesize\ttfamily void rectangle\+::set\+\_\+param (\begin{DoxyParamCaption}\item[{double}]{input\+\_\+len,  }\item[{double}]{input\+\_\+hei }\end{DoxyParamCaption})}
+
+
+
+设置长方形参数 
+
+通过输入确定长方形的长和宽，同时修改长方形的面积，均只保留三位小数 
+\begin{DoxyExceptions}{Exceptions}
+{\em 长度参数必须在设置范围内，即\+MINVALUE到\+MAXVALUE之间，否则抛出const} & char\mbox{[}\mbox{]}异常 ：\char`\"{}输入参数错误！\char`\"{} \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+len} & 长方形的长 input\+\_\+hei 长方形的宽 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrectangle_a7512fadd53ddaed3576414a3274830a8}\label{classrectangle_a7512fadd53ddaed3576414a3274830a8}} 
+\index{rectangle@{rectangle}!use\_centi@{use\_centi}}
+\index{use\_centi@{use\_centi}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{use\_centi()}{use\_centi()}}
+{\footnotesize\ttfamily void rectangle\+::use\+\_\+centi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于长方形对象的use\+\_\+centi()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改长和宽的功能，长方形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从英寸变为厘米时使用，如果已经选择厘米，再次选择厘米时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+\mbox{\Hypertarget{classrectangle_a63db15927f4b74386fe26eead7ed0385}\label{classrectangle_a63db15927f4b74386fe26eead7ed0385}} 
+\index{rectangle@{rectangle}!use\_inch@{use\_inch}}
+\index{use\_inch@{use\_inch}!rectangle@{rectangle}}
+\doxysubsubsection{\texorpdfstring{use\_inch()}{use\_inch()}}
+{\footnotesize\ttfamily void rectangle\+::use\+\_\+inch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于长方形对象的use\+\_\+inch()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改长和宽的功能，长方形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从厘米变为英寸时使用，如果已经选择英寸，再次选择英寸时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/rectangle.\+h\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/rectangle.\+cpp\end{DoxyCompactItemize}

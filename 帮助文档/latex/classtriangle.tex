@@ -1,0 +1,139 @@
+\hypertarget{classtriangle}{}\doxysection{triangle Class Reference}
+\label{classtriangle}\index{triangle@{triangle}}
+
+
+三角形类，继承于shape，用于创建三角形对象  
+
+
+
+
+{\ttfamily \#include $<$triangle.\+h$>$}
+
+Inheritance diagram for triangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtriangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtriangle_ac176bae9dc8cd99ca393c9f360760387}{triangle}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classtriangle_ac176bae9dc8cd99ca393c9f360760387}{triangle\+::triangle}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtriangle_a9626d287125ede8fc8de5ce367362e6a}{set\+\_\+param}} (double input\+\_\+len, double input\+\_\+hei)
+\begin{DoxyCompactList}\small\item\em 设置三角形参数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtriangle_a9ac9d62265df38aba1f7742a92af1f6a}{use\+\_\+inch}} ()
+\begin{DoxyCompactList}\small\item\em 用于三角形对象的use\+\_\+inch()函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtriangle_abb0612e5da32b47cc8790a53b3078c6d}{use\+\_\+centi}} ()
+\begin{DoxyCompactList}\small\item\em 用于三角形对象的use\+\_\+centi()函数 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtriangle_aa324a77eff7326158de326308893844c}{get\+\_\+length}} ()
+\begin{DoxyCompactList}\small\item\em 返回以厘米为单位的三角形的底边长，保留三位小数 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtriangle_a4a49f6f441d0f72f47e75860865c5eb5}{get\+\_\+height}} ()
+\begin{DoxyCompactList}\small\item\em 返回以厘米为单位的三角形的该底边上的高，保留三位小数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+三角形类，继承于shape，用于创建三角形对象 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & 三角形底边长 \\
+\hline
+{\em height} & 该底边上的高 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtriangle_ac176bae9dc8cd99ca393c9f360760387}\label{classtriangle_ac176bae9dc8cd99ca393c9f360760387}} 
+\index{triangle@{triangle}!triangle@{triangle}}
+\index{triangle@{triangle}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{triangle()}{triangle()}}
+{\footnotesize\ttfamily triangle\+::triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classtriangle_ac176bae9dc8cd99ca393c9f360760387}{triangle\+::triangle}} object. 
+
+继承于shape类的构造函数，只是将type的值更改了 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtriangle_a4a49f6f441d0f72f47e75860865c5eb5}\label{classtriangle_a4a49f6f441d0f72f47e75860865c5eb5}} 
+\index{triangle@{triangle}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily double triangle\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回以厘米为单位的三角形的该底边上的高，保留三位小数 
+
+\begin{DoxyReturn}{Returns}
+double 三角形的该底边上的高 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtriangle_aa324a77eff7326158de326308893844c}\label{classtriangle_aa324a77eff7326158de326308893844c}} 
+\index{triangle@{triangle}!get\_length@{get\_length}}
+\index{get\_length@{get\_length}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{get\_length()}{get\_length()}}
+{\footnotesize\ttfamily double triangle\+::get\+\_\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回以厘米为单位的三角形的底边长，保留三位小数 
+
+\begin{DoxyReturn}{Returns}
+double 三角形的底边长 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtriangle_a9626d287125ede8fc8de5ce367362e6a}\label{classtriangle_a9626d287125ede8fc8de5ce367362e6a}} 
+\index{triangle@{triangle}!set\_param@{set\_param}}
+\index{set\_param@{set\_param}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{set\_param()}{set\_param()}}
+{\footnotesize\ttfamily void triangle\+::set\+\_\+param (\begin{DoxyParamCaption}\item[{double}]{input\+\_\+len,  }\item[{double}]{input\+\_\+hei }\end{DoxyParamCaption})}
+
+
+
+设置三角形参数 
+
+通过输入确定三角形的底边和该底边上的高，同时修改三角形的面积，均只保留三位小数 
+\begin{DoxyExceptions}{Exceptions}
+{\em 长度参数必须在设置范围内，即\+MINVALUE到\+MAXVALUE之间，否则抛出const} & char\mbox{[}\mbox{]}异常 ：\char`\"{}输入参数错误！\char`\"{} \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+len} & 三角形的底边长 input\+\_\+hei 三角形该底边上的高 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtriangle_abb0612e5da32b47cc8790a53b3078c6d}\label{classtriangle_abb0612e5da32b47cc8790a53b3078c6d}} 
+\index{triangle@{triangle}!use\_centi@{use\_centi}}
+\index{use\_centi@{use\_centi}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{use\_centi()}{use\_centi()}}
+{\footnotesize\ttfamily void triangle\+::use\+\_\+centi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于三角形对象的use\+\_\+centi()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改底边和该底边上的高的功能，三角形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从英寸变为厘米时使用，如果已经选择厘米，再次选择厘米时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+\mbox{\Hypertarget{classtriangle_a9ac9d62265df38aba1f7742a92af1f6a}\label{classtriangle_a9ac9d62265df38aba1f7742a92af1f6a}} 
+\index{triangle@{triangle}!use\_inch@{use\_inch}}
+\index{use\_inch@{use\_inch}!triangle@{triangle}}
+\doxysubsubsection{\texorpdfstring{use\_inch()}{use\_inch()}}
+{\footnotesize\ttfamily void triangle\+::use\+\_\+inch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于三角形对象的use\+\_\+inch()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改底边和该底边上的高的功能，三角形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从厘米变为英寸时使用，如果已经选择英寸，再次选择英寸时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/triangle.\+h\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/triangle.\+cpp\end{DoxyCompactItemize}

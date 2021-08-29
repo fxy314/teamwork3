@@ -1,0 +1,122 @@
+\hypertarget{classcircle}{}\doxysection{circle Class Reference}
+\label{classcircle}\index{circle@{circle}}
+
+
+圆形类，继承于shape  
+
+
+
+
+{\ttfamily \#include $<$circle.\+h$>$}
+
+Inheritance diagram for circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcircle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}{circle}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}{circle\+::circle}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircle_aef2f70a80774e8052fad384feafd95bd}{use\+\_\+inch}} ()
+\begin{DoxyCompactList}\small\item\em 用于圆形对象的use\+\_\+inch()函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircle_ad546d82a0fc7c37f17d1bb752ca4e34f}{use\+\_\+centi}} ()
+\begin{DoxyCompactList}\small\item\em 用于圆形对象的use\+\_\+centi()函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircle_a692f61c57f15ed7977d6eb899feba1ce}{set\+\_\+param}} (double input\+\_\+diameter)
+\begin{DoxyCompactList}\small\item\em 设置圆形参数 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classcircle_a7bac1fbce6075ca0798232534fb0e3af}{get\+\_\+diameter}} ()
+\begin{DoxyCompactList}\small\item\em 返回以厘米为单位的圆形的直径，保留三位小数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+圆形类，继承于shape 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diameter} & 圆的直径 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}\label{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}} 
+\index{circle@{circle}!circle@{circle}}
+\index{circle@{circle}!circle@{circle}}
+\doxysubsubsection{\texorpdfstring{circle()}{circle()}}
+{\footnotesize\ttfamily circle\+::circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classcircle_a4e0786fc75051f3bbe5de2e08ef9712d}{circle\+::circle}} object. 
+
+继承于shape类的构造函数，只是将type的值更改了 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcircle_a7bac1fbce6075ca0798232534fb0e3af}\label{classcircle_a7bac1fbce6075ca0798232534fb0e3af}} 
+\index{circle@{circle}!get\_diameter@{get\_diameter}}
+\index{get\_diameter@{get\_diameter}!circle@{circle}}
+\doxysubsubsection{\texorpdfstring{get\_diameter()}{get\_diameter()}}
+{\footnotesize\ttfamily double circle\+::get\+\_\+diameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回以厘米为单位的圆形的直径，保留三位小数 
+
+\begin{DoxyReturn}{Returns}
+double 圆形的直径 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcircle_a692f61c57f15ed7977d6eb899feba1ce}\label{classcircle_a692f61c57f15ed7977d6eb899feba1ce}} 
+\index{circle@{circle}!set\_param@{set\_param}}
+\index{set\_param@{set\_param}!circle@{circle}}
+\doxysubsubsection{\texorpdfstring{set\_param()}{set\_param()}}
+{\footnotesize\ttfamily void circle\+::set\+\_\+param (\begin{DoxyParamCaption}\item[{double}]{input\+\_\+d }\end{DoxyParamCaption})}
+
+
+
+设置圆形参数 
+
+通过输入确定圆形的直径，同时修改圆形的面积，均只保留三位小数 
+\begin{DoxyExceptions}{Exceptions}
+{\em 长度参数必须在设置范围内，即\+MINVALUE到\+MAXVALUE之间，否则抛出const} & char\mbox{[}\mbox{]}异常 ：\char`\"{}输入参数错误！\char`\"{} \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+d} & 圆形的直径 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcircle_ad546d82a0fc7c37f17d1bb752ca4e34f}\label{classcircle_ad546d82a0fc7c37f17d1bb752ca4e34f}} 
+\index{circle@{circle}!use\_centi@{use\_centi}}
+\index{use\_centi@{use\_centi}!circle@{circle}}
+\doxysubsubsection{\texorpdfstring{use\_centi()}{use\_centi()}}
+{\footnotesize\ttfamily void circle\+::use\+\_\+centi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于圆形对象的use\+\_\+centi()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改圆形的直径的功能，圆形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从英寸变为厘米时使用，如果已经选择厘米，再次选择厘米时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+\mbox{\Hypertarget{classcircle_aef2f70a80774e8052fad384feafd95bd}\label{classcircle_aef2f70a80774e8052fad384feafd95bd}} 
+\index{circle@{circle}!use\_inch@{use\_inch}}
+\index{use\_inch@{use\_inch}!circle@{circle}}
+\doxysubsubsection{\texorpdfstring{use\_inch()}{use\_inch()}}
+{\footnotesize\ttfamily void circle\+::use\+\_\+inch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+用于圆形对象的use\+\_\+inch()函数 
+
+该函数继承了shape中原函数更改面积的特点，增加了更改圆形的直径的功能，圆形对象应该调用该函数而不是shape类中的原函数 \begin{DoxyNote}{Note}
+该函数只能在单位从厘米变为英寸时使用，如果已经选择英寸，再次选择英寸时不能调用，而且不要在厘米与英寸之间反复切换 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/circle.\+h\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/circle.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,199 @@
+\hypertarget{classshape}{}\doxysection{shape Class Reference}
+\label{classshape}\index{shape@{shape}}
+
+
+shape类，无具体形状，其他四个类均为其子类  
+
+
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+Inheritance diagram for shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classshape}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classshape_a6e4274a649ae91f306e0dc555e44a2e0}{shape}} ()
+\begin{DoxyCompactList}\small\item\em 创建一个shape类对象 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classshape_abb2021a452d5eca25535ea747b2bcdd2}{use\+\_\+inch}} ()
+\begin{DoxyCompactList}\small\item\em 将输入的长度单位上设置为英寸 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classshape_a508742e3d14c2fcc6e9f1cdd9bcb0007}\label{classshape_a508742e3d14c2fcc6e9f1cdd9bcb0007}} 
+void {\bfseries use\+\_\+centi} ()
+\item 
+double \mbox{\hyperlink{classshape_a3815dace0344ea2e3ec3f03f3d1a6398}{get\+\_\+area}} ()
+\begin{DoxyCompactList}\small\item\em 返回图形的面积 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classshape_afa9b1e8d8ed114f1be133e0db344465a}{show\+\_\+area}} ()
+\begin{DoxyCompactList}\small\item\em 返回说明面积的字符串 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classshape_a49e9af2563e15a0db6cf69291556bea4}{show\+\_\+param}} ()
+\begin{DoxyCompactList}\small\item\em 返回说明边长信息的字符串 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classshape_a62ea661bf0f59b77f3e91ec832753734}{show\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em 返回说明面积大小的字符串 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classshape_a609f93ee2220c0278d9e5ff501607993}{cut\+\_\+to\+\_\+3}} (double origin)
+\begin{DoxyCompactList}\small\item\em 此静态函数用于将一个double类的数只保留小数点后三位，并返回 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classshape_ace4958d6e4290c86270ea5028319431d}\label{classshape_ace4958d6e4290c86270ea5028319431d}} 
+double {\bfseries area}
+\item 
+\mbox{\Hypertarget{classshape_a73119bcb9648162d0b9eaca04fc211a3}\label{classshape_a73119bcb9648162d0b9eaca04fc211a3}} 
+const double {\bfseries INCH2} = 2.\+54 $\ast$ 2.\+54
+\item 
+\mbox{\Hypertarget{classshape_a287058af0573484eb1cbc878993a01cb}\label{classshape_a287058af0573484eb1cbc878993a01cb}} 
+const double {\bfseries INCH} = 2.\+54
+\item 
+\mbox{\Hypertarget{classshape_a431fa6a0c6514c4a04071220a86ab6bc}\label{classshape_a431fa6a0c6514c4a04071220a86ab6bc}} 
+const double {\bfseries MINVALUE} = 0.\+0001
+\item 
+\mbox{\Hypertarget{classshape_a51b0d648b68fa64e4b5b43b522d65360}\label{classshape_a51b0d648b68fa64e4b5b43b522d65360}} 
+const double {\bfseries MAXVALUE} = 1000000000
+\item 
+\mbox{\Hypertarget{classshape_a4af11f66df10cb48d8469fb0d0e2a57b}\label{classshape_a4af11f66df10cb48d8469fb0d0e2a57b}} 
+string {\bfseries area\+\_\+info}
+\item 
+\mbox{\Hypertarget{classshape_a6ca52c2f0ee544c5380efdb289c790ac}\label{classshape_a6ca52c2f0ee544c5380efdb289c790ac}} 
+string {\bfseries length\+\_\+info}
+\item 
+\mbox{\Hypertarget{classshape_aa11b6d8add66a1c7101ce7d48edcd8e5}\label{classshape_aa11b6d8add66a1c7101ce7d48edcd8e5}} 
+string {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+shape类，无具体形状，其他四个类均为其子类 
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & 面积 \\
+\hline
+{\em INCH} & 1英寸 = 2.\+54厘米 \\
+\hline
+{\em INCH2} & 1平方英寸 = 2.\+54$\ast$2.54平方厘米 \\
+\hline
+{\em MINVALUE} & 可输入的长度最小值 \\
+\hline
+{\em MAXVALUE} & 可输入的长度最大值 \\
+\hline
+{\em area\+\_\+info} & 说明面积大小的字符串 \\
+\hline
+{\em length\+\_\+info} & 说明边长信息的字符串 \\
+\hline
+{\em type} & 说明形状信息的字符串 以上各字符串可直接用于打印以输出计算结果 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classshape_a6e4274a649ae91f306e0dc555e44a2e0}\label{classshape_a6e4274a649ae91f306e0dc555e44a2e0}} 
+\index{shape@{shape}!shape@{shape}}
+\index{shape@{shape}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily shape\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+创建一个shape类对象 
+
+area 初始化为0.0, length\+\_\+info, type, area\+\_\+info均初始化为空字符串 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classshape_a609f93ee2220c0278d9e5ff501607993}\label{classshape_a609f93ee2220c0278d9e5ff501607993}} 
+\index{shape@{shape}!cut\_to\_3@{cut\_to\_3}}
+\index{cut\_to\_3@{cut\_to\_3}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{cut\_to\_3()}{cut\_to\_3()}}
+{\footnotesize\ttfamily double shape\+::cut\+\_\+to\+\_\+3 (\begin{DoxyParamCaption}\item[{double}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+此静态函数用于将一个double类的数只保留小数点后三位，并返回 
+
+此函数并未设置输入范围限制，只在面积计算函数中设置了 
+\begin{DoxyParams}{Parameters}
+{\em origin} & 输入的浮点数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 只保留三位后的结果 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+此函数在其他函数中多次被调用，每次调用都可能会降低计算精度 
+\end{DoxyNote}
+\mbox{\Hypertarget{classshape_a3815dace0344ea2e3ec3f03f3d1a6398}\label{classshape_a3815dace0344ea2e3ec3f03f3d1a6398}} 
+\index{shape@{shape}!get\_area@{get\_area}}
+\index{get\_area@{get\_area}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{get\_area()}{get\_area()}}
+{\footnotesize\ttfamily double shape\+::get\+\_\+area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回图形的面积 
+
+四种图形均用该函数返回面积，面积单位时平方厘米，返回值保留三位小数 \begin{DoxyReturn}{Returns}
+double 面积的数值 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshape_afa9b1e8d8ed114f1be133e0db344465a}\label{classshape_afa9b1e8d8ed114f1be133e0db344465a}} 
+\index{shape@{shape}!show\_area@{show\_area}}
+\index{show\_area@{show\_area}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{show\_area()}{show\_area()}}
+{\footnotesize\ttfamily string shape\+::show\+\_\+area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回说明面积的字符串 
+
+返回值只保留三位小数，可用于打印显示计算结果 \begin{DoxyReturn}{Returns}
+string 格式为\char`\"{}面积为\+XX（数字）平方厘米\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshape_a49e9af2563e15a0db6cf69291556bea4}\label{classshape_a49e9af2563e15a0db6cf69291556bea4}} 
+\index{shape@{shape}!show\_param@{show\_param}}
+\index{show\_param@{show\_param}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{show\_param()}{show\_param()}}
+{\footnotesize\ttfamily string shape\+::show\+\_\+param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回说明边长信息的字符串 
+
+返回值只保留三位小数，可用于打印显示输入 \begin{DoxyReturn}{Returns}
+string 格式为\char`\"{}\+XX（边）为\+XX（数字）厘米\char`\"{}，有多条边中间用逗号隔开，\char`\"{}\+XX（边）为\+XX（数字）厘米，\+XX（边）为\+XX（数字）厘米\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshape_a62ea661bf0f59b77f3e91ec832753734}\label{classshape_a62ea661bf0f59b77f3e91ec832753734}} 
+\index{shape@{shape}!show\_type@{show\_type}}
+\index{show\_type@{show\_type}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{show\_type()}{show\_type()}}
+{\footnotesize\ttfamily string shape\+::show\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回说明面积大小的字符串 
+
+返回值只保留三位小数，可用于打印显示选择的图形 \begin{DoxyReturn}{Returns}
+string 格式为“图形种类为：\+XX” 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classshape_abb2021a452d5eca25535ea747b2bcdd2}\label{classshape_abb2021a452d5eca25535ea747b2bcdd2}} 
+\index{shape@{shape}!use\_inch@{use\_inch}}
+\index{use\_inch@{use\_inch}!shape@{shape}}
+\doxysubsubsection{\texorpdfstring{use\_inch()}{use\_inch()}}
+{\footnotesize\ttfamily void shape\+::use\+\_\+inch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+将输入的长度单位上设置为英寸 
+
+只在将长度设置从厘米改变为英寸时调用，由于面积始终用平方厘米表示， 调用时将面积数值乘6.4516（6.4516 = 2.\+54 $\ast$ 2.\+54） \begin{DoxyNote}{Note}
+此函数调用了cut\+\_\+to\+\_\+3()函数，多次调用会降低精度，所以应避免在计算前反复更改单位。由于该函数不会改边长，实际使用时，应先创建子类对象，子类对象使用子类的该函数 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/\mbox{\hyperlink{shape_8h}{shape.\+h}}\item 
+C\+:/\+Users/26219/\+Desktop/teamwork2-\/master/code/\mbox{\hyperlink{shape_8cpp}{shape.\+cpp}}\end{DoxyCompactItemize}
